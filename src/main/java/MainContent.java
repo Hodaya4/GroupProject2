@@ -30,6 +30,7 @@ public class MainContent extends JPanel {
         this.setBounds(0,0, width, height);
         this.setDoubleBuffered(true);
         this.setBackground(Color.GRAY);
+        this.setLayout(null);
 
 
         this.title = new JLabel("IP Locator");
@@ -47,7 +48,6 @@ public class MainContent extends JPanel {
         this.input = new JTextField();
         input.setBounds(INPUT_X, INPUT_Y, INPUT_WIDTH, INPUT_HEIGHT);
         this.add(input);
-        this.setVisible(true);
 
 
 

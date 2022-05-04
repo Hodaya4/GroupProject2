@@ -6,8 +6,6 @@ public class Main extends JFrame {
 
 
     public Main() {
-        this.setVisible(true);
-        this.setVisible(true);
         this.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
@@ -16,6 +14,7 @@ public class Main extends JFrame {
 
         MainContent mainContent = new MainContent(WINDOW_WIDTH, WINDOW_HEIGHT);
         this.add(mainContent);
+        this.setVisible(true);
 
     }
 
