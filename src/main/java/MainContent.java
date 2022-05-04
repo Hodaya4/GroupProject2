@@ -5,24 +5,31 @@ public class MainContent extends JPanel {
     private JLabel title;
     private JLabel description;
     private JTextField input;
+    private JButton search;
 
 
-    public static final int TITLE_X = 0;
-    public static final int TITLE_Y = 40;
-    public static final int TITLE_WIDTH = 400;
-    public static final int TITLE_HEIGHT = 200;
+    public static final int TITLE_X = 250;
+    public static final int TITLE_Y = 20;
+    public static final int TITLE_WIDTH = 800;
+    public static final int TITLE_HEIGHT = 150;
     public static final int TITLE_FONT_SIZE = 100;
 
-    public static final int DESCRIPTION_X = 0;
+    public static final int DESCRIPTION_X = 120;
     public static final int DESCRIPTION_Y = 200;
-    public static final int DESCRIPTION_WIDTH = 400;
+    public static final int DESCRIPTION_WIDTH = 800;
     public static final int DESCRIPTION_HEIGHT = 100;
     public static final int DESCRIPTION_FONT_SIZE = 50;
 
     public static final int INPUT_X = 350;
-    public static final int INPUT_Y = 500;
-    public static final int INPUT_WIDTH = 150;
-    public static final int INPUT_HEIGHT = 100;
+    public static final int INPUT_Y = 330;
+    public static final int INPUT_WIDTH = 280;
+    public static final int INPUT_HEIGHT = 50;
+    public static final int INPUT_FONT_SIZE = 30;
+
+    public static final int SEARCH_X = 440;
+    public static final int SEARCH_Y = 430;
+    public static final int SEARCH_WIDTH = 100;
+    public static final int SEARCH_HEIGHT = 50;
 
 
 
@@ -47,10 +54,13 @@ public class MainContent extends JPanel {
 
         this.input = new JTextField();
         input.setBounds(INPUT_X, INPUT_Y, INPUT_WIDTH, INPUT_HEIGHT);
+        Font textFont = new Font("textFont", Font.ITALIC, INPUT_FONT_SIZE);
+        this.input.setFont(textFont);
         this.add(input);
 
-
-
+        this.search = new JButton("search");
+        this.search.setBounds(SEARCH_X, SEARCH_Y, SEARCH_WIDTH, SEARCH_HEIGHT);
+        this.add(search);
 
     }
 }
